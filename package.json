@@ -1,0 +1,25 @@
+{
+  "name": "video-particle",
+  "version": "1.0.0",
+  "description": "made by minyee2913",
+  "main": "src/index.js",
+  "author": "minyee2913",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^20.1.2",
+    "ffmpeg": "^0.0.4",
+    "fluent-ffmpeg": "^2.1.2",
+    "jimp": "^0.22.8",
+    "typescript": "^5.0.4"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./bin/index.js",
+    "dev": "ts-node ./src/index.ts"
+  },
+  "devDependencies": {
+    "@types/ffmpeg": "^1.0.4",
+    "@types/fluent-ffmpeg": "^2.1.21",
+    "ts-node": "^10.9.1"
+  }
+}
