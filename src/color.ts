@@ -6,12 +6,16 @@ export class Color {
     a: number;
     id: string;
 
+    setColor(c: number) {
+        return Math.round(c/10)*10;
+    }
+
     constructor(r: number, g: number, b: number, a: number = 0xff) {
-        this.r = r;
-        this.g = g;
-        this.b = b;
+        this.r = this.setColor(r);
+        this.g = this.setColor(g);
+        this.b = this.setColor(b);
         this.a = a;
-        this.id = `${r}-${g}-${b}-${a}`;
+        this.id = `${this.r}-${this.g}-${this.b}-${a}`;
     }
 
     static fromARGB(code: number): Color {
